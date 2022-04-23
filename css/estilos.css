@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Smooch Sans', sans-serif;
+  background-color: aliceblue; }
+
+#grilla {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-areas: "home" "vela1" "vela2" "vela3" "vela4" "conocenos" "footer"; }
+  #grilla .home {
+    grid-area: home;
+    text-align: center;
+    background-color: cornflowerblue; }
+    #grilla .home .home-imagen {
+      width: 100%; }
+  #grilla .vela1 {
+    margin-top: 10px;
+    grid-area: vela1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(../images/fondo.jpg);
+    background-size: cover; }
+  #grilla .vela2 {
+    grid-area: vela2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(../images/fondo.jpg);
+    background-size: cover; }
+  #grilla .vela3 {
+    grid-area: vela3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(../images/fondo.jpg); }
+  #grilla .vela4 {
+    grid-area: vela4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(../images/fondo.jpg);
+    background-size: cover; }
+  #grilla .conocenos {
+    grid-area: conocenos;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #grilla .imagenes {
+    width: 100px;
+    border-radius: 100%;
+    padding: 15px; }
+  #grilla .parrafo {
+    text-align: center;
+    padding: 20px; }
+
+@media only screen and (min-width: 1024px) {
+  #grilla {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "home home" "vela1 vela2" "vela3 vela4" "conocenos conocenos" "footer footer"; }
+    #grilla .home {
+      font-size: 45px;
+      padding-bottom: 15px; }
+    #grilla .vela1 {
+      margin-top: 0%; }
+    #grilla .parrafo {
+      font-size: 40px; }
+    #grilla .imagenes {
+      width: 150px;
+      padding-bottom: 20px; }
+    #grilla .conocenos {
+      background-color: cornflowerblue; }
+    #grilla .redes {
+      width: 45px; } }
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .footer .redes {
+    width: 30px;
+    padding: 20px; }
+
+header div h2 {
+  background-color: aliceblue; }
+
+header nav {
+  width: 100%;
+  background-color: cornflowerblue;
+  height: 30px;
+  padding-top: 10px; }
+  header nav ul {
+    display: flex;
+    justify-content: space-evenly; }
+    header nav ul li {
+      font-size: 15px;
+      list-style: none; }
+      header nav ul li .menu {
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        padding: 4px;
+        border-radius: 3px; }
+        header nav ul li .menu:hover {
+          background-color: #2d5fbb; }
+
+@media only screen and (min-width: 1024px) {
+  header div h2 {
+    font-size: 60px; }
+  header nav {
+    padding-bottom: 15px; }
+    header nav ul li {
+      font-size: 30px; } }

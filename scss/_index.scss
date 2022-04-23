@@ -1,0 +1,100 @@
+#grilla {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas:"home"
+                        "vela1"
+                        "vela2"
+                        "vela3"
+                        "vela4"
+                        "conocenos"
+                        "footer";
+    .home {
+        grid-area: home;
+        text-align: center;
+        background-color:cornflowerblue;
+        .home-imagen {
+            width: 100%;
+        }
+    }
+    .vela1 {
+        margin-top: 10px;
+        grid-area: vela1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)),url(../images/fondo.jpg);
+        background-size:cover;
+    }
+    .vela2 {
+        grid-area: vela2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image:radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(../images/fondo.jpg);
+        background-size: cover;
+    
+    }
+    .vela3 {
+        grid-area: vela3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image:radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(../images/fondo.jpg)
+    }
+    .vela4 {
+        grid-area: vela4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image:radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(../images/fondo.jpg);
+        background-size: cover;
+    }
+    .conocenos {
+        grid-area: conocenos;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .imagenes {
+        width: 100px;
+        border-radius: 100%;
+        padding: 15px;
+    }
+    .parrafo {
+        text-align: center;
+        padding: 20px;
+    }
+}
+@media only screen and (min-width:1024px) {
+    #grilla {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:"home home"
+                            "vela1 vela2"
+                            "vela3 vela4"
+                            "conocenos conocenos"
+                            "footer footer";
+            .home{
+                font-size: 45px;
+                padding-bottom: 15px;
+            }
+            .vela1{
+                margin-top: 0%;
+            }
+            .parrafo{ font-size: 40px;
+            }
+            .imagenes{ width: 150px;
+            padding-bottom: 20px;
+            }
+            .conocenos{
+                background-color: cornflowerblue;
+            }
+            .redes {
+                width: 45px;
+            }
+}
+
+}
